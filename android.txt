@@ -1,0 +1,187 @@
+
+// plugins add in kotlin
+ id 'kotlin-android-extensions'
+}
+
+
+
+/////////////lOCALIZATION
+https://asrt.gluege.boerde.de/
+
+
+
+https://www.simplifiedcoding.net/retrofit-android-example/
+
+
+//retrofit library
+
+   implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.6.0'
+
+    /************************* Glide Image ***********************/
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+	
+	   Glide.with(context).load(img.get(position)).into(holder.iv);
+
+
+
+
+
+//////////////////
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.sqlite_datbase_demo"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+
+
+
+=====spinner boeder------
+
+How to create custom spinner like border around the spinner with down triangle on the right side?
+
+
+==========image rounded=========
+CircleImageView layout
+
+
+=============Dependancy======================
+https://www.codegrepper.com/code-examples/whatever/circle+imageview+dependency+in+android
+
+
+//************************* Dimen resource ***********************/
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+
+///////////////////////////recyclerview in set gridlayout-------------------
+app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+ app:spanCount="2"
+
+////////////////////get year from json/////////////////
+SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+            SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy");
+            Date date = inputFormat.parse(dy);
+            formattedDate = outputFormat.format(date);
+
+            viewHolder.book_year.setText(formattedDate);
+
+
+//////////////////////string bet pass element  ///////////////
+ String artistNameList = "";
+        int index = 0;
+        for (String artistsItem : docsItem.get(position).getSubject()) {
+
+            if (index == 0){
+                artistNameList = artistsItem;
+            }else {
+                artistNameList = artistNameList + " | "+ artistsItem;
+            }
+            index++;
+        }
+
+/////////////////time formate/////////////
+ try {
+            String formattedDate = "";
+            String dy=  docsItem.get(position).getDate();
+
+
+            SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+            SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy");
+            Date date = inputFormat.parse(dy);
+            formattedDate = outputFormat.format(date);
+
+            viewHolder.book_year.setText(formattedDate);
+
+
+/////////////////@SuppressLint("NonConstantResourceId")/////////
+ghana device ma resource id change thati hoy 6e run time ae to e ignore krva mate
+
+////// app:drawableStartCompat="@drawable/ic_logout" />
+textview in set drawable img
+
+/////<item name="android:background">?selectableItemBackground</item>
+text background selectable
+
+//////////cardview ma padding mate
+    app:cardElevation="5dp"
+
+///tint color change
+app:tint="@color/mainColor"
+
+
+//////************************* Circle ImageView ***********************/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    /************************* client library for Face API ********************/
+    implementation 'com.microsoft.projectoxford:face:1.4.4'
+
+    /************************* Dash circle progress ********************/
+    implementation(name:'DashedCircularProgress_1_0', ext:'aar')
+
+    /************************* ExoPlayer ***********************/
+    implementation 'com.google.android.exoplayer:exoplayer:2.12.2'
+
+    // /************************* For youtube Url Extractor *************/
+    implementation 'com.github.HaarigerHarald:android-youtubeExtractor:v2.1.0'
+
+
+
+////////////github
+
+/…or create a new repository on the command line
+echo "# android_imp_notes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Trushna123/android_imp_notes.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/Trushna123/android_imp_notes.git
+git branch -M main
+git push -u origin main
+
