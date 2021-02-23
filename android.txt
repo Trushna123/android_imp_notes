@@ -1,4 +1,7 @@
-
+//
+ tagName = tagName.replace("]", "");
+                tagName = tagName.replace("{", "");
+                tagName = tagName.replace("}", "");
 // plugins add in kotlin
  id 'kotlin-android-extensions'
 }
