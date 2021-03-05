@@ -1,3 +1,7 @@
+h
+////////// response print
+ Log.d("TAG","schedule response:"+ new Gson().toJson(response.body()));
+
 //
  tagName = tagName.replace("]", "");
                 tagName = tagName.replace("{", "");
